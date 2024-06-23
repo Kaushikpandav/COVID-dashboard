@@ -18,7 +18,7 @@
 #     }
 # ]
 
-# patients = pd.read_csv('c:\\Users\\Kaushik\\OneDrive\\Desktop\\Collage\\Anaconda\\ML\\9 COvid Dash board\\COVID\\IndividualDetails.csv')
+# patients = pd.read_csv('IndividualDetails.csv')
 
 # total = patients.shape[0]
 # active = patients[patients['current_status'] == 'Hospitalized'].shape[0]
@@ -296,7 +296,7 @@ external_stylesheets = [
     }
 ]
 
-patients = pd.read_csv('c:\\Users\\Kaushik\\OneDrive\\Desktop\\Collage\\Anaconda\\ML\\9 COvid Dash board\\COVID\\IndividualDetails.csv')
+patients = pd.read_csv('IndividualDetails.csv')
 
 
 total = patients.shape[0]
@@ -522,12 +522,12 @@ def current_status_chart(id):
 
     return fig
     
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 8050))
-#     app.run_server(host="0.0.0.0", port=port, debug=True, use_reloader=False)
-
 if __name__ == "__main__":
-    app.run_server(debug=True, use_reloader=False)
+    port = int(os.environ.get("PORT", 8050))
+    app.run_server(host="0.0.0.0", port=port, debug=True, use_reloader=False)
+
+# if __name__ == "__main__":
+#     app.run_server(debug=True, use_reloader=False)
 
     
     
