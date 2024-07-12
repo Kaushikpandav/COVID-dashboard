@@ -38,7 +38,7 @@ options = [
     {'label': 'Deceased', 'value': 'Deceased'}
 ]
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(_name_, external_stylesheets=external_stylesheets)
 server = app.server
 
 app.layout = html.Div([
@@ -244,9 +244,9 @@ def current_status_chart(id):
 
     return fig
     
-if __name__ == "__main__":
+if _name_ == "_main_":
     port = int(os.environ.get("PORT", 8050))
     app.run_server(host="0.0.0.0", port=port, debug=True, use_reloader=False)
 
-# if __name__ == "__main__":
+# if _name_ == "_main_":
 #     app.run_server(debug=True, use_reloader=False)
