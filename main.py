@@ -1,4 +1,3 @@
-  
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
@@ -19,7 +18,7 @@ external_stylesheets = [
     }
 ]
 
-patients = pd.read_csv('IndividualDetails.csv')
+patients = pd.read_csv('c:\\Users\\Kaushik\\OneDrive\\Desktop\\Collage\\Anaconda\\ML\\9 COvid Dash board\\COVID\\IndividualDetails.csv')
 
 
 total = patients.shape[0]
@@ -251,69 +250,3 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     app.run_server(debug=True, use_reloader=False)
-
-    
-    
-    
-    
-    
-    
-
-
-
-# import seaborn as sns
-import matplotlib.pyplot as plt
-
-# # Load the dataset
-# tips = sns.load_dataset('tips')
-
-# # 1. Histogram (displot)
-# sns.displot(tips['total_bill'], kde=True)
-# plt.title('Histogram')
-# plt.show()
-
-# # 2. KDE Plot (kdeplot)
-# sns.kdeplot(tips['total_bill'], shade=True)
-# plt.title('KDE Plot')
-# plt.show()
-
-# # 3. Scatter Plot (scatterplot)
-# sns.scatterplot(x='total_bill', y='tip', data=tips)
-# plt.title('Scatter Plot')
-# plt.show()
-
-# # 4. Line Plot (lineplot)
-# sns.lineplot(x='size', y='total_bill', data=tips)
-# plt.title('Line Plot')
-# plt.show()
-
-# # 5. Box Plot (boxplot)
-# sns.boxplot(x='day', y='total_bill', data=tips)
-# plt.title('Box Plot')
-# plt.show()
-
-# # 6. Violin Plot (violinplot)
-# sns.violinplot(x='day', y='total_bill', data=tips)
-# plt.title('Violin Plot')
-# plt.show()
-
-# # 7. Bar Plot (barplot)
-# sns.barplot(x='day', y='total_bill', data=tips)
-# plt.title('Bar Plot')
-# plt.show()
-
-# # 8. Count Plot (countplot)
-# sns.countplot(x='day', data=tips)
-# plt.title('Count Plot')
-# plt.show()
-
-# # 9. Heatmap (heatmap)
-# corr = tips.corr()
-# sns.heatmap(corr, annot=True, cmap='coolwarm')
-# plt.title('Heatmap')
-# plt.show()
-
-# # 10. Pair Plot (pairplot)
-# sns.pairplot(tips)
-# plt.title('Pair Plot')
-# plt.show()
