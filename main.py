@@ -8,6 +8,7 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
 external_stylesheets = [
     {
@@ -38,7 +39,7 @@ options = [
     {'label': 'Deceased', 'value': 'Deceased'}
 ]
 
-app = dash.Dash(_name_, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 app.layout = html.Div([
@@ -244,7 +245,7 @@ def current_status_chart(id):
 
     return fig
     
-if _name_ == "_main_":
+if __name__ == "_main_":
     port = int(os.environ.get("PORT", 8050))
     app.run_server(host="0.0.0.0", port=port, debug=True, use_reloader=False)
 
